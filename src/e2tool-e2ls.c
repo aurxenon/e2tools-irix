@@ -40,12 +40,15 @@
  *
  */
 
-
 #include <regex.h>
 #include <stdint.h>
 #include <inttypes.h>
 #include <pwd.h>
 #include <grp.h>
+
+#ifdef __sgi
+#define PRIu64 "llu"
+#endif
 
 #include "e2tools-autoconfig.h"
 

@@ -17,7 +17,7 @@ e2tools_CPPFLAGS += $(EXT2FS_CFLAGS)
 e2tools_LDADD    += $(EXT2FS_LIBS)
 
 e2tools_CPPFLAGS += $(COM_ERR_CFLAGS)
-e2tools_LDADD    += $(COM_ERR_LIBS)
+e2tools_LDADD    += $(COM_ERR_LIBS) -lpthread
 
 e2tools_SOURCES =
 e2tools_SOURCES += %reldir%/compiler-definitions.h
